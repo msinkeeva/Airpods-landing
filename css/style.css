@@ -129,6 +129,7 @@ body{
     font-weight: 700;
     font-size: 64px;
     margin-bottom: 40px;
+    line-height: 120%
 }
 .compostiton__text{
     text-align: center;
@@ -216,6 +217,134 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+@media (max-width:1500px){
+    .header__content-images img{
+        max-width: 100%;
+    }
+    .title{
+        font-size: 180px;
+        transform: translate(129px, 29px);
+    }
+}
+@media (max-width: 1370px){
+    .title{
+        transform: none;
+        font-size: 140px;
+        padding-top: 20vh;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .title--pod{
+        z-index: 1;
+    }
+    .title--s{
+        transform: none;
+    }
+    .title--m{
+        transform: none;
+    }
+    .title--ax{
+        transform: none;
+    }
 }
 
+@media (max-width: 1200px) {
+    .choose-color__list{
+        flex-wrap: wrap;
+    }
+    .choose-color {
+        padding: 45px;
+    }
+}
+@media (max-width: 930px){
+    .title{
+        position: relative;
+        font-size: 100px;
+        padding-top: 0;
+    }
+    .title--m{
+        padding-left: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .choose-color{
+        padding-bottom: 60px;
+    }
+    .choose-color__list{
+        gap: 16px;
+    }
+    .main__title{
+        font-size: 36px;
+    }
+    .composition{
+        margin-bottom: 60px;
+    }
+    .case{
+        padding: 60px 0;
+    }
+    .energy__title{
+        padding-top: 60px;
+        margin-bottom: 20px;
+    }
+    .energy__num{
+        font-size: 110px;
+        margin: 70px;
+    }
+    .title{
+        font-size: 58px;
+    }
+}
+@media (max-width:568px){
+    .choose-color__text{
+        margin-bottom: 40px;
+    }
+    .choose-color{
+        margin-bottom: 40px;
+    }
+    .case{
+        padding: 40px 0;
+    }
+    .composition__inner-text p{
+        max-width: 100%;
+    }
+    .composition__inner{
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    .menu__list{
+        flex-wrap: wrap;
+        gap: 20px 40px;
+    }
+    .menu__item-btn{
+        margin-left: auto;
+    }
+    .menu__item-btn button{
+        width: 250px;
+    }
+    .menu__item:first-child{
+        margin-left: auto;
+    }
+    .header__top{
+        align-items: flex-start;
+    }
+}
+@media (max-width:420px){
+    .main__title, .choose-color__title{
+        font-size: 28px;
+        line-height: 100%
+    }
+    .energy__num{
+        font-size: 90px;
+    }
+    .case img{
+        max-width: 100%;
+    }
+    .title{
+        font-size: 48px;
+    }
+}
