@@ -31,6 +31,12 @@ body{
     padding: 0 10px;
     margin: 0 auto;
 }
+.content-item{
+    display: none;
+}
+.content-item.content-item__active{
+    display: inline-block;
+}
 .header{
     min-height: 100vh;
     padding-bottom: 100px;
@@ -68,7 +74,21 @@ body{
     bottom: 0;
     width: 100%;
     z-index: -2;
+}
+.header__content-images:has(.color--blue.content-item__active)::before{
     background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header__content-images:has(.color--red.content-item__active)::before{
+    background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header__content-images:has(.color--green.content-item__active)::before{
+    background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header__content-images:has(.color--black.content-item__active)::before{
+    background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+}
+.header__content-images:has(.color--white.content-item__active)::before{
+    background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
 }
 .title{
     font-size: 210px;
@@ -118,6 +138,9 @@ body{
     border-radius: 20px;
     border: 1px solid #777;
     padding: 50px 55px;
+}
+.choose-color__btn--active{
+    display: none;
 }
 .composition{
     margin-bottom: 180px;
