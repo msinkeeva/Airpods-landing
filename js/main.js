@@ -1,7 +1,7 @@
 const chooseColor = document.querySelectorAll(".choose-color__btn")
 const contentItem = document.querySelectorAll(".content-item")
 const menuLink = document.querySelectorAll('.menu__link')
-const menuBtn = document.querySelectorAll('.menu__btn')
+const menuBtn = document.querySelector('.menu__btn')
 
 chooseColor.forEach(function(element){
     element.addEventListener('click', open)
@@ -25,4 +25,8 @@ function open (evt){
     contentActive.forEach(function(item){
         item.classList.add('content-item__active')
     })
+    menuLink.forEach(function(link){
+        link.className = `menu__link ${button}`
+    })
+    menuBtn.className = `menu__btn ${button}`
 }

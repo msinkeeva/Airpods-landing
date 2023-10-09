@@ -53,8 +53,24 @@ body{
     gap: 0 40px;
     font-weight: 700;
 }
-.menu__link:hover{
-    color:  rgb(149, 149, 149);
+.menu__link.color--red:hover{
+    color: #dd5f53;
+    transition: .3s;  
+}
+.menu__link.color--green:hover{
+    color: #6a6e57;
+    transition: .3s;  
+}
+.menu__link.color--blue:hover{
+    color: #31516a;
+    transition: .3s;  
+}
+.menu__link.color--white:hover{
+    color: #8e8d89;
+    transition: .3s;  
+}
+.menu__link.color--black:hover{
+    color: #3e3e3c;
     transition: .3s;  
 }
 .menu__btn{
@@ -65,11 +81,26 @@ body{
     text-transform: uppercase;
     color: #fff;
 }
-.menu__btn:hover{
-    background-color: rgb(149, 149, 149);
+.menu__btn.color--red:hover{
+    background-color: #dd5f53;
     transition: .3s;  
 }
-
+.menu__btn.color--green:hover{
+    background-color: #6a6e57;
+    transition: .3s;  
+}
+.menu__btn.color--blue:hover{
+    background-color: #31516a;
+    transition: .3s;  
+}
+.menu__btn.color--white:hover{
+    background-color: #8e8d89;
+    transition: .3s;  
+}
+.menu__btn.color--black:hover{
+    background-color: #3e3e3c;
+    transition: .3s;  
+}
 .header__content-images{
     text-align: center;
     padding-bottom: 50px;
